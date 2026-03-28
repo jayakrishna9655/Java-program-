@@ -20,8 +20,11 @@ public class exception_handling {
 			System.out.println(e);
 			System.out.println(j);
 		}
-		System.out.println("bye");
-		System.out.println(j);
+		finally {
+			System.out.println("bye");
+			System.out.println(j);
+		}
+		
 
 	}
 
