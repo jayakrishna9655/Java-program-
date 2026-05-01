@@ -31,10 +31,8 @@ class LinkedList {
     	if(head==null) {
     		
     		head=n;
-    		
-    		return;
-    		
     	}
+    	else{
     	 Node temp = head;
 
          while (temp.next != null) {
@@ -42,8 +40,31 @@ class LinkedList {
          }
 
          temp.next = n;
+    	}
 		
 	}
+    
+    public void addAtPosition(int index , int data) {
+		if(index ==0) {
+			addFirst(data);
+			return;
+		}
+    	Node n = new Node(data);
+    	Node temp=head;
+    	for(int i =0;i<index-1;i++) {
+    		if(temp==null) {
+    			return;
+    		}
+    		temp=temp.next;
+    	}
+    	if(temp==null) {
+			return;
+		}
+    	n.next=temp.next;
+    	temp.next=n;
+    	
+	}
+    
  public void printList() {
     	
     	Node term=head;
@@ -68,7 +89,8 @@ public class LinkedList_add {
 
         list.addFirst(10);
         list.addFirst(5);
-        list.addlast(15);
+        list.addlast(25);
+        list.addAtPosition(2, 15);
         list.printList();
     }
 }
