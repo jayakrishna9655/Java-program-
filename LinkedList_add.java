@@ -49,7 +49,7 @@ class LinkedList {
 			addFirst(data);
 			return;
 		}
-    	Node n = new Node(data);
+    	Node n = new Node(data); 
     	Node temp=head;
     	for(int i =0;i<index-1;i++) {
     		if(temp==null) {
