@@ -65,6 +65,23 @@ class LinkedList {
     	
 	}
     
+    public void deleteAt(int index) {
+		if(index==0) {
+			head = head.next;
+		}
+		else {
+			Node n=head;
+			Node n1=null;
+			for(int i=0;i<=index-1;i++) {
+				n=n.next;
+			}
+			n1=n.next;
+			n.next=n1.next;
+			System.out.println("n1.data"+n1.data);
+			this.printList();
+		}
+	}
+    
  public void printList() {
     	
     	Node term=head;
@@ -90,7 +107,8 @@ public class LinkedList_add {
         list.addFirst(10);
         list.addFirst(5);
         list.addlast(25);
-        list.addAtPosition(2, 15);
+        list.addAtPosition(3, 15);
+        list.deleteAt(1);
         list.printList();
     }
 }
