@@ -13,7 +13,6 @@ public class TreeFullFunctions {
 
     Node root;
 
-    // Insert
     public void insert(int data) {
         root = insertFun(root, data);
     }
@@ -32,7 +31,6 @@ public class TreeFullFunctions {
         return root;
     }
 
-    // Inorder
     public void inorder(Node root) {
         if (root != null) {
             inorder(root.left);
@@ -41,7 +39,6 @@ public class TreeFullFunctions {
         }
     }
 
-    // Preorder
     public void preorder(Node root) {
         if (root != null) {
             System.out.print(root.data + " ");
@@ -50,7 +47,6 @@ public class TreeFullFunctions {
         }
     }
 
-    // Postorder
     public void postorder(Node root) {
         if (root != null) {
             postorder(root.left);
@@ -74,7 +70,7 @@ public class TreeFullFunctions {
         tree.inorder(tree.root);
 
         System.out.print("\nPreorder: ");
-        tree.preorder(tree.root);
+        tree.preorder(tree.root); 
 
         System.out.print("\nPostorder: ");
         tree.postorder(tree.root);
