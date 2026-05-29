@@ -1,12 +1,11 @@
-package com.example.demo;
+package com.firstSpring.jai;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Laptop {
-
-	public void compile() {
-		System.out.println("it is compiling jai");
+	Laptop(){
+		System.out.println("con Laptop");
 	}
-
+	public void coding() {
+		System.out.println("jai can we start coding");
+	}
+	
 }
