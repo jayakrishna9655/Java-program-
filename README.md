@@ -2,3 +2,4 @@
 2.Best Time to Buy and Sell Stock
 3.Longest Substring Without Repeating Characters
 4.Three sum
+5.X Pattern
