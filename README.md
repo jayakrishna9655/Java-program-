@@ -3,6 +3,6 @@
 3.Longest Substring Without Repeating Characters
 4.Three sum
 5.X Pattern
-
+6.decodeRetrying
 --c programs
 1.short Circuit
