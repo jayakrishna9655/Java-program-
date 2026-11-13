@@ -7,6 +7,7 @@
 6. decodeRetrying
 7. Group Anagrams
 8. Longest Substring Without Repeating Characters
+9. Search Insert Position
 
 # c programs
 1. short Circuit
